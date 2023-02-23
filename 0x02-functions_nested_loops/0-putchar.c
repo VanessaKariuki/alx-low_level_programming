@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 /**
- *main  prints _putchar followed by a new line
+ * 0-putchar.c main  prints _putchar followed by a new line
  *
  * Returns: 0
  */
