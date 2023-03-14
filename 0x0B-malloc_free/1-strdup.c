@@ -9,7 +9,7 @@
  *
  * Return: NULL in case of error, pointer to allocated
  */
-char *_strdup(char*str)
+char *_strdup(char *str)
 
 {
 	{
@@ -46,7 +46,5 @@ char *_strdup(char*str)
 
 		aaa[r] = str[r];
 
-
-
-	return (aaa)
+	return (aaa);
 }
