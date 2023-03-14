@@ -48,6 +48,5 @@ char *_strdup(char*str)
 
 
 
-	return (aaa);
-
+	return (aaa)
 }
