@@ -10,8 +10,9 @@
  *Return: pointer to the array (success), NULL = 0 (error)
  *
  */
-char *create_array(unsigned int size, char c);
-({
+
+char *create_array(unsigned int size, char c); {
+
 	char *v;
 	unsigned int i = 0;
 
@@ -31,5 +32,5 @@ char *create_array(unsigned int size, char c);
 
 	*(v + i) = '\0';
 
-	return (v);
-})
+		return (v);
+}
