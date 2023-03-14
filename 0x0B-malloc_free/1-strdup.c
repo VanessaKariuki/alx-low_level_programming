@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * _strdup - returns a pointer to a newly allocated
  *space in memory, which contains a copy of the
@@ -8,27 +9,45 @@
  *
  * Return: NULL in case of error, pointer to allocated
  */
-char *_strdup(char *str)
+char *_strdup(char*str)
+
 {
-	char *v;
-	int index, len;
+	{
+
+	char *aaa;
+
+	int i, r = 0;
+
+
 
 	if (str == NULL)
+
 		return (NULL);
 
-	for (index = 0; str[index]; index++)
-		len++;
-	cpy = malloc(sizeof(char) * (len + 1));
+	i = 0;
 
-	if (cpy == NULL)
+	while (str[i] != '\0')
+
+		i++;
+
+
+
+	aaa = malloc(sizeof(char) * (i + 1));
+
+
+
+	if (aaa == NULL)
+
 		return (NULL);
 
-	for (index = 0; str[index]; index++)
-	{
-		cpy[index] = str[index];
-	}
 
-	cpy[len] = '\0';
 
-	return (cpy);
+	for (r = 0; str[r]; r++)
+
+		aaa[r] = str[r];
+
+
+
+	return (aaa);
+
 }
